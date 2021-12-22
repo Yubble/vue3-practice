@@ -1,16 +1,23 @@
+<!--
+ * @Name: 
+ * @Description: 
+ * @Author: 刘燕保
+ * @Date: 2021-12-15 21:41:18
+-->
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="link">
+    <router-link to="/baseCount">跳转：baseCount</router-link>
+    <router-link to="/repo">跳转：示例_仓库</router-link>
+  </div>
+  <div id="content">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 }
 </script>
 
@@ -22,5 +29,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.link a {
+  margin-right: 15px;
+}
+
+#content {
+  margin-top: 10px;
 }
 </style>

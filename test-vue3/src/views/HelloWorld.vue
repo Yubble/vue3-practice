@@ -1,19 +1,21 @@
+<!--
+ * @Name: 
+ * @Description: 
+ * @Author: 刘燕保
+ * @Date: 2021-12-15 21:41:18
+-->
 <template>
   <button @click='add'>{{ count }}</button>
+  <p>双倍的count：{{ twiceTheCounter }}</p>
 </template>
 
 <script>
-import { ref } from 'vue'
+import baseTest from '../components/baseTest'
 export default {
   setup() {
-    const count = ref(0)
-    const add = () => {
-      count.value++
-    }
-    return {
-      add,
-      count
-    }
+    const baseTestCon = baseTest()
+    console.log('baseTestCon is ', baseTestCon)
+    return baseTestCon
   }
 }
 </script>
