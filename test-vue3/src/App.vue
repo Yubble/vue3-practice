@@ -9,6 +9,7 @@
   <div class="link">
     <router-link to="/baseCount">跳转：baseCount</router-link>
     <router-link to="/repo">跳转：示例_仓库</router-link>
+    <router-link to="/note">跳转：示例_记事本</router-link>
   </div>
   <div id="content">
     <router-view></router-view>
